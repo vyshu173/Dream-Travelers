@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore inspiring destinations across India with Dream Travelers.">
+    <title>Destinations | Dream Travelers</title>
+    <link rel="stylesheet" href="travel.css">
+    <style>
+    .destination-modal.show {
+    animation: modal-backdrop-in 180ms ease-out;
+    }
+
+    .destination-modal.show .modal-content {
+    animation: modal-card-in 220ms ease-out;
+    }
+
+    @keyframes modal-backdrop-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+
+    @keyframes modal-card-in {
+    from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+    .destination-modal.show,
+    .destination-modal.show .modal-content {
+    animation: none;
+    }
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="travel index.html" class="logo">
+        <img src="travel.images/DT logo.png" alt="Dream Travelers" class="logo-image">
+      </a>
+      <ul class="nav-links">
+        <li><a href="travel index.html">Home</a></li>
+        <li><a href="travel destination.html" aria-current="page">Destinations</a></li>
+        <li><a href="travel packages.html">Packages</a></li>
+        <li><a href="travel about.html">About us</a></li>
+        <li><a href="travel contact.html">Contact</a></li>
+        <li><a class="login" href="travel login.html">Login</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="destination" aria-labelledby="destination-heading">
+        <header class="destination-page-heading">
+          <h1>Your Journey Starts Here</h1>
+        </header>
+        <header class="destination-text">
+          <h2 id="destination-heading">Uncover India's Hidden Wonders</h2>
+          <p class="destination-tagline">Find quiet trails, golden shores, and places worth remembering.</p>
+        </header>
+        <div class="destination-carousel">
+          <button class="destination-arrow" type="button"
+            data-carousel="india" data-direction="-1"
+            aria-label="Previous Indian destinations"></button>
+          <div class="cards-container" id="indiaDestinations">
+            <article class="destination-card">
+              <img src="travel.images/manali-river.jpg" alt="Mountain scenery in Manali" loading="lazy">
+              <div class="card-content">
+                <h2>Manali</h2>
+                <p>Himalayan mountain bliss.</p>
+
+                <button type="button" class="view-more-btn" data-destination="manali">
+                View Details
+
+                </button>
+
+              </div>
+            </article>
+            <article class="destination-card">
+              <img src="travel.images/goa-beach.jpg" alt="Coastal scenery in Goa" loading="lazy">
+              <div class="card-content">
+                <h2>Goa</h2>
+                <p>Sun, sand, and Goa after dark.</p>
+                <button type="button" class="view-more-btn" data-destination="goa">
+                View Details
+
+                </button>
+              </div>
+            </article>
+            <article class="destination-card">
+              <img src="travel.images/kerala.jpg" alt="Lush green landscape in Kerala" loading="lazy">
+              <div class="card-content">
+                <h2>Kerala</h2>
+                <p>Serene Kerala backwaters.</p>
+                <button type="button" class="view-more-btn" data-destination="kerala">
+                View Details
+
+                </button>
+              </div>
+            </article>
+            <article class="destination-card">
+              <img class="jaipur-image" src="travel.images/jaipur.jpg" alt="Amber Fort in Jaipur" loading="lazy">
+              <div class="card-content">
+                <h2>Jaipur</h2>
+                <p>Royal charm in pink.</p>
+                <button type="button" class="view-more-btn" data-destination="jaipur">
+                View Details
+
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/gulmarg.jpg" alt="Beautiful Dal Lake in Kashmir" loading="lazy">
+              <div class="card-content">
+                <h2>Kashmir</h2>
+                <p>Alpine views, tranquil lakes.</p>
+                <button type="button" class="view-more-btn" data-destination="kashmir">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/meghalayas.jpg" alt="Beautiful green landscapes of Meghalaya" loading="lazy">
+              <div class="card-content">
+                <h2>Meghalaya</h2>
+                <p>Clouds, falls, and living bridges.</p>
+                <button type="button" class="view-more-btn" data-destination="meghalaya">
+                View Details
+
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img class="chikmagalur-image" src="travel.images/coffee siri.jpg" alt="Misty green hills of Chikmagalur" loading="lazy">
+              <div class="card-content">
+                <h2>Chikmagalur</h2>
+                <p>Misty coffee hills.</p>
+                <button type="button" class="view-more-btn" data-destination="chikmagalur">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/darjeeling.jpg" alt="Beautiful mountains and tea gardens of Darjeeling" loading="lazy">
+              <div class="card-content">
+                <h2>Darjeeling</h2>
+                <p>Tea gardens and toy trains.</p>
+                <button type="button" class="view-more-btn" data-destination="darjeeling">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/spiti.jpg" alt="Beautiful mountains of Spiti Valley" loading="lazy">
+              <div class="card-content">
+                <h2>Spiti Valley</h2>
+                <p>Peace in the high Himalayas.</p>
+                <button type="button" class="view-more-btn" data-destination="spiti">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/andaman.jpg" alt="Beautiful turquoise sea at the Andaman Islands" loading="lazy">
+              <div class="card-content">
+                <h2>Andaman Islands</h2>
+                <p>Turquoise seas, quiet shores.</p>
+                <button type="button" class="view-more-btn" data-destination="andaman">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/rann.jpg" alt="White salt desert of Rann of Kutch, Gujarat" loading="lazy">
+              <div class="card-content">
+                <h2>Rann of Kutch</h2>
+                <p>A desert dressed in white.</p>
+                <button type="button" class="view-more-btn" data-destination="rann">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/lakshdweep.jpg" alt="Turquoise lagoon in Lakshadweep" loading="lazy">
+              <div class="card-content">
+                <h2>Lakshadweep</h2>
+                <p>Island paradise awaits.</p>
+                <button type="button" class="view-more-btn" data-destination="lakshadweep">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/uttarkand.jpg" alt="Colorful wildflowers in Valley of Flowers, Uttarakhand" loading="lazy">
+              <div class="card-content">
+                <h2>Valley of Flowers</h2>
+                <p>A valley bursting with blooms.</p>
+                <button type="button" class="view-more-btn" data-destination="valley">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/last road.jpg" alt="India's Last Road at Dhanushkodi" loading="lazy">
+              <div class="card-content">
+                <h2>Dhanushkodi</h2>
+                <p>Where two seas meet.</p>
+                <button type="button" class="view-more-btn" data-destination="dhanushkodi">
+                View Details
+                </button>
+              </div>
+            </article>
+
+          </div>
+
+          <button class="destination-arrow" type="button"
+            data-carousel="india" data-direction="1"
+            aria-label="Next Indian destinations"></button>
+        </div>
+        <header class="destination-text destination-world-heading">
+          <h2>Explore the World</h2>
+          <p class="destination-tagline">Your next unforgettable story is one trip away.</p>
+        </header>
+
+        <div class="destination-carousel">
+
+          <button class="destination-arrow" type="button"
+            data-carousel="world" data-direction="-1"
+            aria-label="Previous international destinations"></button>
+
+          <div class="cards-container world-cards-container" id="worldDestinations">
+
+            <article class="destination-card">
+              <img src="travel.images/bali.jpg" alt="Beautiful tropical scenery in Bali" loading="lazy">
+              <div class="card-content">
+                <h2>Bali, Indonesia</h2>
+                <p>Bali, your island escape.</p>
+                <button type="button" class="view-more-btn" data-destination="bali">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img class="paris-image" src="travel.images/tower.jpg" alt="Eiffel Tower in Paris" loading="lazy">
+              <div class="card-content">
+                <h2>Paris, France</h2>
+                <p>Fall for the romance of Paris.</p>
+                <button type="button" class="view-more-btn" data-destination="paris">
+                View Details
+                </button>
+              </div>
+            </article>
+            <article class="destination-card">
+              <img src="travel.images/maldives.jpg" alt="Beautiful turquoise waters in the Maldives" loading="lazy">
+              <div class="card-content">
+                <h2>Maldives</h2>
+                <p>Paradise in every shade of blue.</p>
+                <button type="button" class="view-more-btn" data-destination="maldives">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img class="japan-image" src="travel.images/japan.jpg" alt="Mount Fuji and cherry blossoms in Japan" loading="lazy">
+              <div class="card-content">
+                <h2>Japan</h2>
+                <p>Ancient calm, neon nights.</p>
+                <button type="button" class="view-more-btn" data-destination="japan">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/singapore.jpg" alt="Singapore Marina Bay skyline" loading="lazy">
+              <div class="card-content">
+                <h2>Singapore</h2>
+                <p>The future blooms in Singapore.</p>
+                <button type="button" class="view-more-btn" data-destination="singapore">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/dubai.jpg" alt="Dubai skyline with Burj Khalifa" loading="lazy">
+              <div class="card-content">
+                <h2>Dubai, UAE</h2>
+                <p>Dream big in Dubai.</p>
+                <button type="button" class="view-more-btn" data-destination="dubai">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/switzerland.jpg" alt="Beautiful Swiss Alps in Switzerland" loading="lazy">
+              <div class="card-content">
+                <h2>Switzerland</h2>
+                <p>Alpine magic, Swiss style.</p>
+                <button type="button" class="view-more-btn" data-destination="switzerland">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/vietnam.jpg" alt="Beautiful Ha Long Bay in Vietnam" loading="lazy">
+              <div class="card-content">
+                <h2>Vietnam</h2>
+                <p>Emerald bays, glowing lanterns.</p>
+                <button type="button" class="view-more-btn" data-destination="vietnam">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/turkey.jpg" alt="Hot air balloons over Cappadocia, Turkey" loading="lazy">
+              <div class="card-content">
+                <h2>Turkey</h2>
+                <p>Hot air balloons and ancient wonders.</p>
+                <button type="button" class="view-more-btn" data-destination="turkey">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img class="thailand-image" src="travel.images/thailand.jpg" alt="Beautiful tropical islands in Thailand" loading="lazy">
+              <div class="card-content">
+                <h2>Thailand</h2>
+                <p>Golden temples, tropical days.</p>
+                <button type="button" class="view-more-btn" data-destination="thailand">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/italy.jpg" alt="Beautiful coastal scenery in Italy" loading="lazy">
+              <div class="card-content">
+                <h2>Italy</h2>
+                <p>La dolce vita, Italian style.</p>
+                <button type="button" class="view-more-btn" data-destination="italy">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/korea.jpg" alt="Seoul city skyline in South Korea" loading="lazy">
+              <div class="card-content">
+                <h2>South Korea</h2>
+                <p>K-pop energy, timeless charm.</p>
+                <button type="button" class="view-more-btn" data-destination="southkorea">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/london.jpg" alt="Big Ben and the River Thames in London" loading="lazy">
+              <div class="card-content">
+                <h2>London</h2>
+                <p>London charm, around every corner.</p>
+                <button type="button" class="view-more-btn" data-destination="london">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/egypt.jpg" alt="Pyramids of Giza in Egypt" loading="lazy">
+              <div class="card-content">
+                <h2>Egypt</h2>
+                <p>Walk among ancient wonders.</p>
+                <button type="button" class="view-more-btn" data-destination="egypt">
+                View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="travel.images/sydney.jpg" alt="Sydney Opera House and Sydney Harbour Bridge" loading="lazy">
+              <div class="card-content">
+                <h2>Australia</h2>
+                <p>Reef days, harbour sunsets.</p>
+                <button type="button" class="view-more-btn" data-destination="australia">
+                View Details
+                </button>
+              </div>
+            </article>
+
+          </div>
+
+          <button class="destination-arrow" type="button"
+            data-carousel="world" data-direction="1"
+            aria-label="Next international destinations"></button>
+
+        </div>
+      </section>
+
+      <div class="destination-modal" id="destinationModal"
+        role="dialog" aria-modal="true"
+        aria-labelledby="modalTitle" aria-hidden="true">
+
+        <div class="modal-content">
+          <button class="modal-close" id="closeModal"
+            type="button" aria-label="Close popup">�</button>
+
+          <img id="modalImage" alt="">
+
+          <div class="modal-body">
+            <p class="modal-location" id="modalLocation"></p>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+
+            <h3>Popular Attractions</h3>
+            <ul id="modalAttractions"></ul>
+
+            <div class="modal-info">
+              <p><strong>Best time to visit:</strong>
+                <span id="modalSeason"></span>
+              </p>
+              <p><strong>Suggested trip:</strong>
+                <span id="modalDuration"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <img src="travel.images/DT logo.png" alt="Dream Travelers" class="footer-logo">
+        <p class="footer-tagline">Dream it. Explore it. Live it.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.5C17.3 1.3 16.2 1.2 15 1.2c-3.2 0-5 1.9-5 5.3V9H7v4h3v8z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+        <p class="copyright">� 2026 Dream Travelers. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <script>
+      var destinations = {
+      manali: {
+      title: "Manali",
+      location: "Himachal Pradesh, India",
+      image: "travel.images/snow-temple.jpg",
+      imageFit: "contain",
+      description: "Discover the beautiful Himalayan mountains, green valleys, rivers and peaceful scenery of Manali.",
+      attractions: ["Solang Valley", "Hadimba Devi Temple", "Old Manali"],
+      season: "March to June and December to February",
+      duration: "3-4 days"
+      },
+      goa: {
+      title: "Goa",
+      location: "Goa, India",
+      image: "travel.images/goa-fort.jpg",
+      imageFit: "contain",
+      description: "Enjoy golden beaches, Portuguese-influenced heritage, colorful markets and beautiful coastal scenery.",
+      attractions: ["Baga Beach", "Fort Aguada", "Basilica of Bom Jesus"],
+      season: "November to February",
+      duration: "3-5 days"
+      },
+      kerala: {
+      title: "Kerala",
+      location: "Kerala, India",
+      image: "travel.images/kerala-boat.jpg",
+      imageFit: "contain",
+      description: "Explore tranquil backwaters, lush tea gardens, tropical landscapes and Kerala's rich cultural traditions.",
+      attractions: ["Alleppey Backwaters", "Munnar", "Fort Kochi"],
+      season: "October to March",
+      duration: "4-6 days"
+      },
+      jaipur: {
+      title: "Jaipur",
+      location: "Rajasthan, India",
+      image: "travel.images/jaipur-fort.jpg",
+      imageFit: "contain",
+      description: "Discover the Pink City's royal palaces, historic forts, traditional crafts and vibrant markets.",
+      attractions: ["Hawa Mahal", "Amber Fort", "City Palace"],
+      season: "October to March",
+      duration: "2-3 days"
+      },
+  
+      kashmir: {
+      title: "Kashmir",
+      location: "Jammu and Kashmir, India",
+      image: "travel.images/pahalgam.jpg",
+      imageFit: "contain",
+      description: "Discover beautiful valleys, peaceful lakes, gardens, and snow-covered mountain scenery.",
+      attractions: ["Dal Lake", "Gulmarg", "Pahalgam"],
+      season: "March to October for valleys; winter for snow",
+      duration: "4-6 days"
+      },
+  
+      meghalaya: {
+      title: "Meghalaya",
+      location: "Meghalaya, India",
+      image: "travel.images/living root.jpg",
+      description: "Explore misty green hills, spectacular waterfalls, caves, and living root bridges.",
+      attractions: ["Cherrapunji", "Dawki River", "Living Root Bridges"],
+      season: "October to April",
+      duration: "4-6 days"
+      },
+  
+      chikmagalur: {
+      title: "Chikmagalur",
+      location: "Karnataka, India",
+      image: "travel.images/muliyangiri.jpg",
+      description: "Enjoy misty hills, coffee plantations, scenic viewpoints, and refreshing waterfalls.",
+      attractions: ["Mullayanagiri", "Baba Budangiri", "Hebbe Falls"],
+      season: "September to March",
+      duration: "2-3 days"
+      },
+  
+      darjeeling: {
+      title: "Darjeeling",
+      location: "West Bengal, India",
+      image: "travel.images/darjeeling loop.jpg",
+      description: "Discover Himalayan views, lush tea gardens, and the charm of the famous toy train.",
+      attractions: ["Tiger Hill", "Batasia Loop", "Darjeeling Himalayan Railway"],
+      season: "March to May and October to November",
+      duration: "2-4 days"
+      },
+  
+      spiti: {
+      title: "Spiti Valley",
+      location: "Himachal Pradesh, India",
+      image: "travel.images/lake.jpg",
+      description: "Experience dramatic mountain landscapes, ancient monasteries, and peaceful high-altitude villages.",
+      attractions: ["Key Monastery", "Chandratal Lake", "Kibber Village"],
+      season: "May to October",
+      duration: "5-7 days"
+      },
+  
+      andaman: {
+      title: "Andaman Islands",
+      location: "Andaman and Nicobar Islands, India",
+      image: "travel.images/neil island.jpg",
+      imageFit: "contain",
+      description: "Explore tropical beaches, turquoise waters, coral reefs, and beautiful island scenery.",
+      attractions: ["Swaraj Dweep", "Radhanagar Beach", "Cellular Jail"],
+      season: "November to April",
+      duration: "5-7 days"
+      },
+  
+      rann: {
+      title: "Rann of Kutch",
+      location: "Gujarat, India",
+      image: "travel.images/fort.jpg",
+      imageFit: "contain",
+      description: "Discover the vast white salt desert, colorful local traditions, and beautiful sunset views.",
+      attractions: ["White Rann", "Kalo Dungar", "Bhuj"],
+      season: "November to February",
+      duration: "2-3 days"
+      },
+  
+      lakshadweep: {
+      title: "Lakshadweep",
+      location: "Lakshadweep, India",
+      image: "travel.images/minicoy.jpg",
+      imageFit: "contain",
+      description: "Enjoy turquoise lagoons, coral islands, white sandy beaches, and peaceful tropical scenery.",
+      attractions: ["Agatti Island", "Bangaram Island", "Kavaratti"],
+      season: "October to March",
+      duration: "3-5 days"
+      },
+  
+      valley: {
+      title: "Valley of Flowers",
+      location: "Uttarakhand, India",
+      image: "travel.images/ut_lake.jpg",
+      imageFit: "contain",
+      description: "Explore a spectacular Himalayan valley filled with seasonal alpine flowers and mountain scenery.",
+      attractions: ["Valley of Flowers National Park", "Ghangaria", "Hemkund Sahib"],
+      season: "July to September",
+      duration: "3-4 days"
+      },
+  
+      dhanushkodi: {
+      title: "Dhanushkodi � Last Road of India",
+      location: "Dhanushkodi, Tamil Nadu, India",
+      image: "travel.images/ghost house.jpg",
+      imageFit: "contain",
+      description: "Discover a dramatic coastal landscape near India's southern tip, with sea views and the remains of the old town.",
+      attractions: ["Arichal Munai", "Dhanushkodi Beach", "Old Dhanushkodi ruins"],
+      season: "October to March",
+      duration: "Half day to 1 day"
+      },
+  
+      bali: {
+      title: "Bali",
+      location: "Bali, Indonesia",
+      image: "travel.images/bali temple.jpg",
+      imageFit: "contain",
+      description: "Discover tropical beaches, lush rice terraces, beautiful temples, and Bali's peaceful island scenery.",
+      attractions: ["Uluwatu Temple", "Tegallalang Rice Terraces", "Lempuyang Temple"],
+      season: "April to October",
+      duration: "4-6 days"
+      },
+  
+      paris: {
+      title: "Paris",
+      location: "Paris, France",
+      image: "travel.images/paris.jpg",
+      imageFit: "contain",
+      description: "Discover the Eiffel Tower, charming streets, and beautiful architecture in the City of Light.",
+      attractions: ["Eiffel Tower", "Louvre Museum", "Arc de Triomphe"],
+      season: "April to June and September to October",
+      duration: "3-4 days"
+      },
+      maldives: {
+      title: "Maldives",
+      location: "Maldives",
+      image: "travel.images/island.jpg",
+      imageFit: "contain",
+      description: "Explore crystal-clear waters, white sandy beaches, and beautiful tropical islands.",
+      attractions: ["Mal�", "Maafushi Island", "Baa Atoll"],
+      season: "November to April",
+      duration: "3-5 days"
+      },
+      japan: {
+      title: "Japan",
+      location: "Japan",
+      image: "travel.images/mount.jpg",
+      imageFit: "contain",
+      description: "Experience beautiful cherry blossoms, ancient temples, and the vibrant streets of Tokyo.",
+      attractions: ["Mount Fuji", "Tokyo", "Kyoto"],
+      season: "March to May and September to November",
+      duration: "5-7 days"
+      },
+  
+      singapore: {
+      title: "Singapore",
+      location: "Singapore",
+      image: "travel.images/airport.jpg",
+      description: "Explore Singapore's impressive skyline, lush gardens, vibrant waterfront, and exciting attractions for visitors of all ages.",
+      attractions: [
+      "Gardens by the Bay",
+      "Marina Bay Sands",
+      "Sentosa Island",
+      "Universal Studios Singapore",
+      "Merlion Park"
+      ],
+      season: "February to April",
+      duration: "3-4 days"
+      },
+  
+      dubai: {
+      title: "Dubai",
+      location: "Dubai, United Arab Emirates",
+      image: "travel.images/dubai_flower.jpg",
+      description: "Discover Dubai's futuristic skyline, famous landmarks, desert adventures, and exciting shopping and entertainment experiences.",
+      attractions: [
+      "Burj Khalifa",
+      "Dubai Mall",
+      "Palm Jumeirah",
+      "Dubai Frame",
+      "Dubai Desert Safari"
+      ],
+      season: "November to March",
+      duration: "3-5 days"
+      },
+  
+      switzerland: {
+      title: "Switzerland",
+      location: "Switzerland, Europe",
+      image: "travel.images/switz_lake.jpg",
+      description: "Experience Switzerland's stunning Alpine mountains, crystal-clear lakes, scenic train journeys, and charming mountain villages.",
+      attractions: [
+      "Matterhorn, Zermatt",
+      "Lake Geneva",
+      "Jungfraujoch",
+      "Lucerne",
+      "Interlaken"
+      ],
+      season: "June to September for summer scenery; December to March for snow",
+      duration: "5-7 days"
+      },
+  
+      vietnam: {
+      title: "Vietnam",
+      location: "Vietnam, Southeast Asia",
+      image: "travel.images/vietnam_travel.jpg",
+      description: "Discover Vietnam's breathtaking landscapes, historic towns, delicious local cuisine, and beautiful coastal scenery.",
+      attractions: [
+      "Ha Long Bay",
+      "Hoi An Ancient Town",
+      "Golden Bridge, Da Nang",
+      "Sapa Rice Terraces",
+      "Ho Chi Minh City"
+      ],
+      season: "February to April",
+      duration: "5-7 days"
+      },
+  
+      malaysia: {
+      title: "Malaysia",
+      location: "Malaysia, Southeast Asia",
+      image: "travel.images/bridge.jpg",
+      description: "Discover Malaysia's modern skyline, tropical islands, historic streets, and fascinating mix of cultures.",
+      attractions: [
+      "Petronas Twin Towers",
+      "Batu Caves",
+      "Langkawi Island",
+      "George Town, Penang",
+      "Mount Kinabalu"
+      ],
+      season: "December to April for many west-coast destinations",
+      duration: "4-6 days"
+      },
+  
+      turkey: {
+      title: "Turkey",
+      location: "T�rkiye, Europe and Asia",
+      image: "travel.images/air ballons.jpg",
+      description: "Explore Turkey's fascinating history, stunning architecture, unique landscapes, and lively traditional markets.",
+      attractions: [
+      "Hagia Sophia, Istanbul",
+      "Cappadocia",
+      "Pamukkale",
+      "Blue Mosque, Istanbul",
+      "Ephesus Ancient City"
+      ],
+      season: "April to May and September to October",
+      duration: "5-7 days"
+      },
+  
+      thailand: {
+      title: "Thailand",
+      location: "Thailand, Southeast Asia",
+      image: "travel.images/thailand fest.jpg",
+      description: "Experience Thailand's beautiful islands, impressive temples, colourful markets, and breathtaking tropical scenery.",
+      attractions: [
+      "Phi Phi Islands",
+      "Grand Palace, Bangkok",
+      "Wat Arun",
+      "Phuket",
+      "Chiang Mai"
+      ],
+      season: "November to February",
+      duration: "5-7 days"
+      },
+  
+      italy: {
+      title: "Italy",
+      location: "Italy, Europe",
+      image: "travel.images/italy_place.jpg",
+      description: "Explore Italy's rich history, artistic cities, beautiful coastlines, and world-famous architecture.",
+      attractions: [
+      "Colosseum, Rome",
+      "Grand Canal, Venice",
+      "Cinque Terre",
+      "Florence Cathedral",
+      "Amalfi Coast"
+      ],
+      season: "April to June and September to October",
+      duration: "6-8 days"
+      },
+  
+      southkorea: {
+      title: "South Korea",
+      location: "South Korea, East Asia",
+      image: "travel.images/catholic.jpg",
+      description: "Explore South Korea's royal palaces, modern cityscapes, traditional villages, beautiful islands, and vibrant culture.",
+      attractions: [
+      "Gyeongbokgung Palace",
+      "N Seoul Tower",
+      "Jeju Island",
+      "Bukchon Hanok Village",
+      "Haeundae Beach, Busan"
+      ],
+      season: "April to May and September to October",
+      duration: "5-7 days"
+      },
+  
+      london: {
+      title: "London",
+      location: "London, England, United Kingdom",
+      image: "travel.images/london_.jpg",
+      description: "Explore London's historic landmarks, royal heritage, famous bridges, fascinating museums, and lively city streets.",
+      attractions: [
+      "Big Ben",
+      "Tower Bridge",
+      "Buckingham Palace",
+      "London Eye",
+      "British Museum"
+      ],
+      season: "May to September",
+      duration: "3-5 days"
+      },
+  
+      egypt: {
+      title: "Egypt",
+      location: "Egypt, North Africa",
+      image: "travel.images/egypt desert.jpg",
+      description: "Explore Egypt's ancient civilisation, remarkable monuments, desert scenery, and beautiful Nile River landscapes.",
+      attractions: [
+      "Pyramids of Giza",
+      "Great Sphinx",
+      "Luxor Temple",
+      "Valley of the Kings",
+      "Nile River"
+      ],
+      season: "October to April",
+      duration: "5-7 days"
+      },
+  
+      australia: {
+      title: "Australia",
+      location: "Australia, Oceania",
+      image: "travel.images/twelve.jpg",
+      description: "Discover Australia's spectacular coastlines, world-famous landmarks, colourful marine life, and beautiful natural landscapes.",
+      attractions: [
+      "Sydney Opera House",
+      "Great Barrier Reef",
+      "Bondi Beach",
+      "Blue Mountains",
+      "Melbourne City"
+      ],
+      season: "September to November and March to May",
+      duration: "7-10 days"
+      }
+  
+      };
+  
+      var modal = document.getElementById("destinationModal");
+      var closeButton = document.getElementById("closeModal");
+      var viewMoreButtons = document.querySelectorAll(".view-more-btn");
+      var previousBodyOverflow = "";
+      var buttonIndex;
+  
+      for (buttonIndex = 0; buttonIndex < viewMoreButtons.length; buttonIndex++) {
+      viewMoreButtons[buttonIndex].addEventListener("click", function () {
+      var place = destinations[this.getAttribute("data-destination")];
+      var image;
+      var list;
+      var attractionIndex;
+      var item;
+  
+      if (!place) return;
+  
+      document.getElementById("modalTitle").textContent = place.title;
+      document.getElementById("modalLocation").textContent = place.location;
+      document.getElementById("modalDescription").textContent = place.description;
+      document.getElementById("modalSeason").textContent = place.season;
+      document.getElementById("modalDuration").textContent = place.duration;
+  
+      image = document.getElementById("modalImage");
+      image.src = place.image;
+      image.alt = place.title;
+      if (place.imageFit === "contain") {
+      image.classList.add("modal-image-contain");
+      } else {
+      image.classList.remove("modal-image-contain");
+      }
+  
+      list = document.getElementById("modalAttractions");
+      while (list.firstChild) {
+      list.removeChild(list.firstChild);
+      }
+  
+      for (attractionIndex = 0; attractionIndex < place.attractions.length; attractionIndex++) {
+      item = document.createElement("li");
+      item.textContent = place.attractions[attractionIndex];
+      list.appendChild(item);
+      }
+  
+      modal.classList.add("show");
+      modal.setAttribute("aria-hidden", "false");
+      previousBodyOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      closeButton.focus();
+      });
+      }
+  
+      function closeDestinationModal() {
+      modal.classList.remove("show");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = previousBodyOverflow;
+      }
+  
+      closeButton.addEventListener("click", closeDestinationModal);
+  
+      modal.addEventListener("click", function (event) {
+      if (event.target === modal) closeDestinationModal();
+      });
+  
+      document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && modal.classList.contains("show")) {
+      closeDestinationModal();
+      }
+      });
+      var carouselArrows = document.querySelectorAll(".destination-arrow[data-carousel]");
+  
+      carouselArrows.forEach(function (arrow) {
+      arrow.addEventListener("click", function () {
+      var carousel = document.getElementById(
+      arrow.getAttribute("data-carousel") === "world" ? "worldDestinations" : "indiaDestinations"
+      );
+  
+      if (!carousel) return;
+  
+      carousel.scrollBy({
+      left: carousel.clientWidth * Number(arrow.getAttribute("data-direction")),
+      behavior: "smooth"
+      });
+      });
+      });
+    </script>
+
+  </body>
+</html>

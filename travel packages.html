@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse nature, hill station, and coastal trip ideas from Dream Travelers.">
+    <title>Packages | Dream Travelers</title>
+    <link rel="stylesheet" href="travel.css">
+  </head>
+  <body>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="travel index.html" class="logo">
+        <img src="travel.images/DT logo.png" alt="Dream Travelers" class="logo-image">
+      </a>
+      <ul class="nav-links">
+        <li><a href="travel index.html">Home</a></li>
+        <li><a href="travel destination.html">Destinations</a></li>
+        <li><a href="travel packages.html" aria-current="page">Packages</a></li>
+        <li><a href="travel about.html">About us</a></li>
+        <li><a href="travel contact.html">Contact</a></li>
+        <li><a class="login" href="travel login.html">Login</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="packages" aria-labelledby="packages-heading">
+        <header class="packages-text">
+          <h1 id="packages-heading">Find your next escape</h1>
+        </header>
+        <div class="package-filters">
+          <button class="filter-btn active" data-filter="all">All Packages</button>
+          <button class="filter-btn" data-filter="adventure">Adventure</button>
+          <button class="filter-btn" data-filter="honeymoon">Honeymoon</button>
+          <button class="filter-btn" data-filter="family">Family</button>
+          <button class="filter-btn" data-filter="beach">Beach</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+          <button class="filter-btn" data-filter="luxury">Luxury</button>
+          <button class="filter-btn" data-filter="budget">Budget</button>
+        </div>
+        <section class="package-category" id="india-packages">
+          <h2>Incredible India</h2>
+          <p>Discover beautiful destinations across India.</p>
+
+          <div class="package-carousel">
+            <button class="carousel-arrow prev" type="button"
+              aria-label="Previous India packages"></button>
+
+            <div class="package-track" id="indiaPackageTrack">
+
+              <article class="packages-card" data-category="adventure">
+                <img src="travel.images/jaisalmer.jpg" alt="Jaisalmer golden desert">
+                <div class="packages-content">
+                  <span class="package-tag">Adventure</span>
+                  <h2>Jaisalmer – Golden Desert</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹9,499 per person</p>
+                  <button class="view-package-btn" data-package="jaisalmer" type="button">View Package →</button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="honeymoon">
+                <img src="travel.images/udaipur.jpg" alt="Udaipur lake palace">
+                <div class="packages-content">
+                  <span class="package-tag">Honeymoon</span>
+                  <h2>Udaipur – City of Lakes</h2>
+                  <p>4 Days · 3 Nights</p>
+                  <p class="package-price">From ₹12,999 per person</p>
+                  <button class="view-package-btn" data-package="udaipur" type="button">View Package →</button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="family">
+                <img src="travel.images/jodhpur.jpg" alt="Jodhpur blue city">
+                <div class="packages-content">
+                  <span class="package-tag">Family</span>
+                  <h2>Jodhpur – The Blue City</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹8,999 per person</p>
+                  <button class="view-package-btn" data-package="jodhpur" type="button">View Package →</button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="budget">
+                <img src="travel.images/pushkar.jpg" alt="Pushkar lake and ghats">
+                <div class="packages-content">
+                  <span class="package-tag">Budget</span>
+                  <h2>Pushkar – Cultural Escape</h2>
+                  <p>2 Days · 1 Night</p>
+                  <p class="package-price">From ₹5,999 per person</p>
+                  <button class="view-package-btn" data-package="pushkar" type="button">View Package →</button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="adventure">
+                <img src="travel.images/hampi.jpg" alt="Hampi ancient stone monuments">
+                <div class="packages-content">
+                  <span class="package-tag">Adventure</span>
+                  <h2>Hampi – Lost Kingdom</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹7,499 per person</p>
+                  <button class="view-package-btn" data-package="hampi" type="button">View Package →</button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="family">
+                <img src="travel.images/mysuru.jpg" alt="Mysuru Palace illuminated at night">
+
+                <div class="packages-content">
+                  <span class="package-tag">Family</span>
+                  <h2>Mysuru – Royal Heritage</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹7,999 per person</p>
+
+                  <button class="view-package-btn" data-package="mysuru" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="budget">
+                <img src="travel.images/hyderabad.jpg" alt="Charminar in Hyderabad">
+
+                <div class="packages-content">
+                  <span class="package-tag">Budget</span>
+                  <h2>Hyderabad – City & Food Trail</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹6,999 per person</p>
+
+                  <button class="view-package-btn" data-package="hyderabad" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="family">
+                <img src="travel.images/amritsar.jpg" alt="Golden Temple in Amritsar">
+
+                <div class="packages-content">
+                  <span class="package-tag">Family</span>
+                  <h2>Amritsar – Cultural Journey</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹8,499 per person</p>
+
+                  <button class="view-package-btn" data-package="amritsar" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="nature">
+                <img src="travel.images/varanasi.jpg" alt="Varanasi ghats beside the Ganges">
+
+                <div class="packages-content">
+                  <span class="package-tag">Nature</span>
+                  <h2>Varanasi – Riverside Escape</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹7,499 per person</p>
+
+                  <button class="view-package-btn" data-package="varanasi" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="honeymoon">
+                <img src="travel.images/coorg.jpg" alt="Coorg scenic coffee plantations">
+
+                <div class="packages-content">
+                  <span class="package-tag">Honeymoon</span>
+                  <h2>Coorg – Romantic Retreat</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹11,999 per person</p>
+
+                  <button class="view-package-btn" data-package="coorg" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="beach">
+                <img src="travel.images/alibaug.jpg" alt="Alibaug beach in Maharashtra">
+
+                <div class="packages-content">
+                  <span class="package-tag">Beach</span>
+                  <h2>Alibaug – Coastal Escape</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹8,999 per person</p>
+
+                  <button class="view-package-btn" data-package="alibaug" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="nature">
+                <img src="travel.images/coonoor.jpg" alt="Coonoor green tea gardens">
+
+                <div class="packages-content">
+                  <span class="package-tag">Nature</span>
+                  <h2>Coonoor – Nilgiri Hills Retreat</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹9,499 per person</p>
+
+                  <button class="view-package-btn" data-package="coonoor" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="nature">
+                <img src="travel.images/lonvala.jpg" alt="Lonavala scenic green valleys">
+
+                <div class="packages-content">
+                  <span class="package-tag">Nature</span>
+                  <h2>Lonavala – Scenic Getaway</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹9,999 per person</p>
+
+                  <button class="view-package-btn" data-package="lonavala" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="honeymoon">
+                <img src="travel.images/abu.jpg" alt="Mount Abu scenic Nakki Lake">
+
+                <div class="packages-content">
+                  <span class="package-tag">Honeymoon</span>
+                  <h2>Mount Abu – Couple's Escape</h2>
+                  <p>3 Days · 2 Nights</p>
+                  <p class="package-price">From ₹10,999 per person</p>
+
+                  <button class="view-package-btn" data-package="mountabu" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <button class="carousel-arrow next" type="button"
+              aria-label="Next India packages"></button>
+          </div>
+        </section>
+        <section class="package-category" id="international-packages">
+          <h2>Beyond Borders</h2>
+          <p>Discover amazing destinations beyond India.</p>
+
+          <div class="package-carousel">
+            <button class="carousel-arrow prev" type="button"
+              aria-label="Previous international packages"></button>
+
+            <div class="package-track" id="internationalPackageTrack">
+
+              <article class="packages-card" data-category="honeymoon">
+                <img src="travel.images/greece.jpg" alt="Santorini Greece blue and white buildings">
+
+                <div class="packages-content">
+                  <span class="package-tag">Honeymoon</span>
+                  <h2>Greece – Mediterranean Escape</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹54,999 per person</p>
+
+                  <button class="view-package-btn" data-package="greece" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="family">
+                <img src="travel.images/spainn.jpg" alt="Barcelona Spain city architecture">
+
+                <div class="packages-content">
+                  <span class="package-tag">Family</span>
+                  <h2>Spain – European Discovery</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹49,999 per person</p>
+
+                  <button class="view-package-btn" data-package="spain" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="nature">
+                <img src="travel.images/newzealand.jpg" alt="New Zealand scenic mountains and lake">
+
+                <div class="packages-content">
+                  <span class="package-tag">Nature</span>
+                  <h2>New Zealand – Nature Paradise</h2>
+                  <p>6 Days · 5 Nights</p>
+                  <p class="package-price">From ₹74,999 per person</p>
+
+                  <button class="view-package-btn" data-package="newzealand" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="honeymoon">
+                <img src="travel.images/mauritius.jpg" alt="Mauritius tropical beach and turquoise lagoon">
+
+                <div class="packages-content">
+                  <span class="package-tag">Honeymoon</span>
+                  <h2>Mauritius – Tropical Paradise</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹59,999 per person</p>
+
+                  <button class="view-package-btn" data-package="mauritius" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="honeymoon">
+                <img src="travel.images/seychelles.jpg" alt="Seychelles tropical island beach">
+
+                <div class="packages-content">
+                  <span class="package-tag">Honeymoon</span>
+                  <h2>Seychelles – Island Paradise</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹69,999 per person</p>
+
+                  <button class="view-package-btn" data-package="seychelles" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="adventure">
+                <img src="travel.images/argentina.jpg" alt="Patagonia mountains in Argentina">
+
+                <div class="packages-content">
+                  <span class="package-tag">Adventure</span>
+                  <h2>Argentina – Patagonia Adventure</h2>
+                  <p>6 Days · 5 Nights</p>
+                  <p class="package-price">From ₹89,999 per person</p>
+
+                  <button class="view-package-btn" data-package="argentina" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="budget">
+                <img src="travel.images/georgiaa.jpg" alt="Scenic old town of Tbilisi Georgia">
+
+                <div class="packages-content">
+                  <span class="package-tag">Budget</span>
+                  <h2>Georgia – Budget Explorer</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹39,999 per person</p>
+
+                  <button class="view-package-btn" data-package="georgia" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="family">
+                <img src="travel.images/uzbekistan.jpg" alt="Registan Square in Samarkand Uzbekistan">
+
+                <div class="packages-content">
+                  <span class="package-tag">Family</span>
+                  <h2>Uzbekistan – Cultural Journey</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹49,999 per person</p>
+
+                  <button class="view-package-btn" data-package="uzbekistan" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="nature">
+                <img src="travel.images/costarica.jpg" alt="Costa Rica tropical rainforest and waterfall">
+
+                <div class="packages-content">
+                  <span class="package-tag">Nature</span>
+                  <h2>Costa Rica – Rainforest Retreat</h2>
+                  <p>6 Days · 5 Nights</p>
+                  <p class="package-price">From ₹64,999 per person</p>
+
+                  <button class="view-package-btn" data-package="costarica" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="budget">
+                <img src="travel.images/azerbaijan.jpg" alt="Baku city skyline in Azerbaijan">
+
+                <div class="packages-content">
+                  <span class="package-tag">Budget</span>
+                  <h2>Azerbaijan – City Escape</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹42,999 per person</p>
+
+                  <button class="view-package-btn" data-package="azerbaijan" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="luxury">
+                <img src="travel.images/kenya.jpg" alt="Kenya wildlife safari across the savannah">
+
+                <div class="packages-content">
+                  <span class="package-tag">Luxury</span>
+                  <h2>Kenya – Wildlife Safari</h2>
+                  <p>6 Days · 5 Nights</p>
+                  <p class="package-price">From ₹69,999 per person</p>
+
+                  <button class="view-package-btn" data-package="kenya" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="luxury">
+                <img src="travel.images/finland.jpg" alt="Northern lights over a snowy Finnish forest">
+
+                <div class="packages-content">
+                  <span class="package-tag">Luxury</span>
+                  <h2>Finland – Northern Nature</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹79,999 per person</p>
+
+                  <button class="view-package-btn" data-package="finland" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="budget">
+                <img src="travel.images/poland.jpg" alt="Colorful historic buildings in Krakow Poland">
+
+                <div class="packages-content">
+                  <span class="package-tag">Budget</span>
+                  <h2>Poland – European Budget Trip</h2>
+                  <p>5 Days · 4 Nights</p>
+                  <p class="package-price">From ₹44,999 per person</p>
+
+                  <button class="view-package-btn" data-package="poland" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="beach">
+                <img src="travel.images/croatia.jpg" alt="Dubrovnik old town on Croatia's coast">
+
+                <div class="packages-content">
+                  <span class="package-tag">Beach</span>
+                  <h2>Croatia – Adriatic Coast Escape</h2>
+                  <p>6 Days · 5 Nights</p>
+                  <p class="package-price">From ₹74,999 per person</p>
+
+                  <button class="view-package-btn" data-package="croatia" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+              <article class="packages-card" data-category="adventure">
+                <img src="travel.images/peru.jpg" alt="Machu Picchu in the Peruvian Andes">
+
+                <div class="packages-content">
+                  <span class="package-tag">Adventure</span>
+                  <h2>Peru – Andes Adventure</h2>
+                  <p>6 Days · 5 Nights</p>
+                  <p class="package-price">From ₹84,999 per person</p>
+
+                  <button class="view-package-btn" data-package="peru" type="button">
+                  View Package →
+                  </button>
+                </div>
+              </article>
+
+            </div>
+
+            <button class="carousel-arrow next" type="button"
+              aria-label="Next international packages"></button>
+          </div>
+        </section>
+
+      </section>
+
+      <div class="package-modal" id="packageModal">
+
+        <div class="package-modal-content">
+
+          <button class="close-package-modal" id="closePackageModal"
+            type="button" aria-label="Close package details">
+            &times;
+          </button>
+
+          <img src="" alt="" id="modalPackageImage">
+
+          <div class="package-modal-info">
+
+            <span class="package-tag" id="modalPackageTag"></span>
+
+            <h2 id="modalPackageTitle"></h2>
+
+            <p id="modalPackageDuration"></p>
+
+            <h3 id="modalPackagePrice"></h3>
+
+            <p id="modalPackageDescription"></p>
+
+            <h3>Places to Visit</h3>
+            <ul id="modalPackagePlaces"></ul>
+
+            <h3>Activities</h3>
+            <ul id="modalPackageActivities"></ul>
+
+            <h3>Package Includes</h3>
+            <ul id="modalPackageIncludes"></ul>
+
+            <button type="button" class="book-now-btn">
+            Book Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <img src="travel.images/DT logo.png" alt="Dream Travelers" class="footer-logo">
+        <p class="footer-tagline">Dream it. Explore it. Live it.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.5C17.3 1.3 16.2 1.2 15 1.2c-3.2 0-5 1.9-5 5.3V9H7v4h3v8z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+        <p class="copyright">© 2026 Dream Travelers. All rights reserved.</p>
+      </footer>
+    </main>
+    <script>
+      document.querySelectorAll(".package-carousel").forEach(function (carousel) {
+      var track = carousel.querySelector(".package-track");
+      var previousButton = carousel.querySelector(".carousel-arrow.prev");
+      var nextButton = carousel.querySelector(".carousel-arrow.next");
+  
+      previousButton.addEventListener("click", function () {
+      track.scrollBy({ left: -track.clientWidth, behavior: "smooth" });
+      });
+  
+      nextButton.addEventListener("click", function () {
+      track.scrollBy({ left: track.clientWidth, behavior: "smooth" });
+      });
+      });
+    </script>
+    <script src="js/auth.js" defer></script>
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const packageCards = document.querySelectorAll(".packages-card");
+  
+      filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+  
+      const selectedFilter = button.dataset.filter;
+  
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => {
+      btn.classList.remove("active");
+      });
+  
+      // Highlight selected button
+      button.classList.add("active");
+  
+      // Filter all package cards
+      packageCards.forEach(card => {
+      const category = card.dataset.category;
+  
+      if (selectedFilter === "all" || category === selectedFilter) {
+      card.style.display = "";
+      } else {
+      card.style.display = "none";
+      }
+      });
+  
+      });
+      })
+      const packageModal = document.getElementById("packageModal");
+      const closePackageModal = document.getElementById("closePackageModal");
+  
+      const packageDetails = {
+  
+      jaisalmer: {
+      title: "Jaisalmer – Golden Desert Escape",
+      image: "travel.images/jaisalmer.jpg",
+      category: "Adventure",
+      duration: "4 Days · 3 Nights",
+      price: "From ₹12,999 per person",
+      description: "Explore the golden city of Rajasthan and enjoy its beautiful desert landscapes.",
+      places: ["Jaisalmer Fort", "Sam Sand Dunes", "Gadisar Lake"],
+      activities: ["Desert safari", "Camel ride", "Cultural evening"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      udaipur: {
+      title: "Udaipur – City of Lakes",
+      image: "travel.images/udaipur.jpg",
+      category: "Honeymoon",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹14,999 per person",
+      description: "Enjoy romantic lakes, beautiful palaces and peaceful surroundings.",
+      places: ["Lake Pichola", "City Palace", "Fateh Sagar Lake"],
+      activities: ["Boat ride", "Heritage walk", "Local shopping"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      jodhpur: {
+      title: "Jodhpur – Blue City Escape",
+      image: "travel.images/jodhpur.jpg",
+      category: "Family",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹11,999 per person",
+      description: "Discover the blue streets and historic beauty of Rajasthan.",
+      places: ["Mehrangarh Fort", "Jaswant Thada", "Clock Tower"],
+      activities: ["City tour", "Shopping", "Photography"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      pushkar: {
+      title: "Pushkar – Desert Getaway",
+      image: "travel.images/pushkar.jpg",
+      category: "Budget",
+      duration: "2 Days · 1 Night",
+      price: "From ₹8,999 per person",
+      description: "Enjoy a peaceful short getaway surrounded by desert scenery.",
+      places: ["Pushkar Lake", "Savitri Temple", "Pushkar Market"],
+      activities: ["Local sightseeing", "Shopping", "Photography"],
+      includes: ["Hotel stay", "Breakfast", "Local transport"]
+      },
+  
+      hampi: {
+      title: "Hampi – Heritage Adventure",
+      image: "travel.images/hampi.jpg",
+      category: "Adventure",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹9,999 per person",
+      description: "Explore the fascinating ruins and landscapes of ancient Hampi.",
+      places: ["Virupaksha Temple", "Vijaya Vittala Temple", "Hemakuta Hill"],
+      activities: ["Heritage walk", "Cycling", "Photography"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      mysuru: {
+      title: "Mysuru – Royal City Tour",
+      image: "travel.images/mysuru.jpg",
+      category: "Family",
+      duration: "2 Days · 1 Night",
+      price: "From ₹7,999 per person",
+      description: "Experience royal architecture, gardens and local culture.",
+      places: ["Mysore Palace", "Brindavan Gardens", "Chamundi Hills"],
+      activities: ["Palace visit", "Garden visit", "Shopping"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      hyderabad: {
+      title: "Hyderabad – City Explorer",
+      image: "travel.images/hyderabad.jpg",
+      category: "Budget",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹10,999 per person",
+      description: "Discover historic landmarks and the lively atmosphere of Hyderabad.",
+      places: ["Charminar", "Golconda Fort", "Hussain Sagar"],
+      activities: ["City tour", "Food exploration", "Shopping"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      amritsar: {
+      title: "Amritsar – Cultural Journey",
+      image: "travel.images/amritsar.jpg",
+      category: "Family",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹11,999 per person",
+      description: "Explore the culture, history and famous attractions of Amritsar.",
+      places: ["Golden Temple", "Jallianwala Bagh", "Wagah Border"],
+      activities: ["Heritage tour", "Local food exploration", "Shopping"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      varanasi: {
+      title: "Varanasi – Spiritual Escape",
+      image: "travel.images/varanasi.jpg",
+      category: "Family",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹12,999 per person",
+      description: "Experience the historic ghats and cultural atmosphere of Varanasi.",
+      places: ["Dashashwamedh Ghat", "Assi Ghat", "Sarnath"],
+      activities: ["Boat ride", "Heritage walk", "Local sightseeing"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      khajuraho: {
+      title: "Khajuraho – Heritage Discovery",
+      image: "khajuraho.jpg",
+      category: "Budget",
+      duration: "2 Days · 1 Night",
+      price: "From ₹9,999 per person",
+      description: "Discover remarkable historic architecture and UNESCO heritage sites.",
+      places: ["Western Group of Temples", "Eastern Group", "Archaeological Museum"],
+      activities: ["Heritage tour", "Photography", "Museum visit"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      coorg: {
+      title: "Coorg – Romantic Retreat",
+      image: "travel.images/coorg.jpg",
+      category: "Honeymoon",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹13,999 per person",
+      description: "Relax among coffee plantations, waterfalls and beautiful green landscapes.",
+      places: ["Abbey Falls", "Raja's Seat", "Dubare Elephant Camp"],
+      activities: ["Nature walks", "Coffee plantation visit", "Sightseeing"],
+      includes: ["Hotel stay", "Breakfast", "Local transport"]
+      },
+  
+      alibaug: {
+      title: "Alibaug – Coastal Escape",
+      image: "travel.images/alibaug.jpg",
+      category: "Beach",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹11,999 per person",
+      description: "Enjoy a relaxing coastal holiday with beaches and sea views.",
+      places: ["Alibaug Beach", "Kolaba Fort", "Kashid Beach"],
+      activities: ["Beach walks", "Waterfront sightseeing", "Photography"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      coonoor: {
+      title: "Coonoor – Nilgiri Hills Retreat",
+      image: "travel.images/coonoor.jpg",
+      category: "Nature",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹12,999 per person",
+      description: "Enjoy peaceful tea gardens, scenic viewpoints and mountain landscapes.",
+      places: ["Sim's Park", "Dolphin's Nose", "Lamb's Rock"],
+      activities: ["Toy train ride", "Tea garden visit", "Nature walks"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+  
+      lonavala: {
+      title: "Lonavala – Scenic Getaway",
+      image: "lonavala.jpg",
+      category: "Nature",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹10,999 per person",
+      description: "Escape to beautiful valleys, waterfalls and scenic viewpoints.",
+      places: ["Tiger Point", "Bhushi Dam", "Karla Caves"],
+      activities: ["Nature walks", "Sightseeing", "Photography"],
+      includes: ["Hotel stay", "Breakfast", "Local transport"]
+      },
+  
+      mountabu: {
+      title: "Mount Abu – Couple's Escape",
+      image: "mountabu.jpg",
+      category: "Honeymoon",
+      duration: "3 Days · 2 Nights",
+      price: "From ₹10,999 per person",
+      description: "Enjoy a relaxing couple's getaway with lakes and mountain views.",
+      places: ["Nakki Lake", "Toad Rock", "Sunset Point"],
+      activities: ["Boat ride", "Sunset viewing", "Nature walks"],
+      includes: ["Hotel stay", "Breakfast", "Sightseeing"]
+      },
+      // INTERNATIONAL PACKAGES
+  
+      greece: {
+      title: "Greece – Mediterranean Escape",
+      category: "Honeymoon",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹54,999 per person",
+      description: "Experience the charm of Greece with beautiful islands, blue waters and stunning Mediterranean views.",
+      places: ["Santorini", "Athens", "Mykonos"],
+      activities: ["Sunset cruise", "Island sightseeing", "Beach exploration"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Sightseeing", "Airport transfers"]
+      },
+  
+      spain: {
+      title: "Spain – European Discovery",
+      category: "Family",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹49,999 per person",
+      description: "Discover Spain's lively cities, historic architecture, beautiful streets and delicious local culture.",
+      places: ["Barcelona", "Madrid", "Seville"],
+      activities: ["City sightseeing", "Architecture tours", "Local food experience"],
+      includes: ["Hotel accommodation", "Daily breakfast", "City tours", "Airport transfers"]
+      },
+  
+      newzealand: {
+      title: "New Zealand – Nature Paradise",
+      category: "Nature",
+      duration: "6 Days · 5 Nights",
+      price: "From ₹74,999 per person",
+      description: "Enjoy New Zealand's beautiful lakes, green landscapes and breathtaking mountain scenery.",
+      places: ["Queenstown", "Lake Tekapo", "Milford Sound"],
+      activities: ["Lake sightseeing", "Scenic drives", "Nature walks"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Sightseeing", "Transfers"]
+      },
+  
+      mauritius: {
+      title: "Mauritius – Tropical Paradise",
+      category: "Honeymoon",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹59,999 per person",
+      description: "Relax on tropical beaches and explore the turquoise lagoons and natural beauty of Mauritius.",
+      places: ["Grand Baie", "Ile aux Cerfs", "Chamarel"],
+      activities: ["Beach relaxation", "Glass-bottom boat ride", "Island sightseeing"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Sightseeing", "Airport transfers"]
+      },
+  
+      seychelles: {
+      title: "Seychelles – Island Paradise",
+      category: "Honeymoon",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹69,999 per person",
+      description: "Enjoy a peaceful island holiday surrounded by clear waters, tropical greenery and beautiful beaches.",
+      places: ["Mahe Island", "Praslin Island", "La Digue"],
+      activities: ["Beach exploration", "Island hopping", "Snorkelling"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Island transfers", "Sightseeing"]
+      },
+  
+      argentina: {
+      title: "Argentina – Patagonia Adventure",
+      category: "Adventure",
+      duration: "6 Days · 5 Nights",
+      price: "From ₹89,999 per person",
+      description: "Explore Argentina's dramatic landscapes, mountain scenery and the natural wonders of Patagonia.",
+      places: ["El Calafate", "Perito Moreno Glacier", "El Chalten"],
+      activities: ["Nature trekking", "Glacier sightseeing", "Scenic photography"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Guided sightseeing", "Transfers"]
+      },
+  
+      georgia: {
+      title: "Georgia – Budget Explorer",
+      category: "Budget",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹39,999 per person",
+      description: "Discover Georgia's charming old towns, mountain views and rich cultural heritage.",
+      places: ["Tbilisi", "Kazbegi", "Mtskheta"],
+      activities: ["Old town walk", "Mountain sightseeing", "Cultural exploration"],
+      includes: ["Hotel accommodation", "Daily breakfast", "City sightseeing", "Transfers"]
+      },
+  
+      uzbekistan: {
+      title: "Uzbekistan – Cultural Journey",
+      category: "Family",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹49,999 per person",
+      description: "Explore the historic Silk Road cities, beautiful architecture and fascinating traditions of Uzbekistan.",
+      places: ["Samarkand", "Bukhara", "Tashkent"],
+      activities: ["Heritage walks", "Monument visits", "Local market exploration"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Guided tours", "Transfers"]
+      },
+  
+      costarica: {
+      title: "Costa Rica – Rainforest Retreat",
+      category: "Nature",
+      duration: "6 Days · 5 Nights",
+      price: "From ₹64,999 per person",
+      description: "Discover tropical rainforests, stunning waterfalls and the amazing natural beauty of Costa Rica.",
+      places: ["La Fortuna", "Monteverde", "Manuel Antonio"],
+      activities: ["Nature walks", "Waterfall visits", "Wildlife sightseeing"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Nature tours", "Transfers"]
+      },
+  
+      azerbaijan: {
+      title: "Azerbaijan – City Escape",
+      category: "Budget",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹42,999 per person",
+      description: "Experience the mix of modern attractions and historic charm in Azerbaijan.",
+      places: ["Baku", "Gobustan", "Gabala"],
+      activities: ["City sightseeing", "Old town exploration", "Mountain excursions"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Sightseeing", "Transfers"]
+      },
+  
+      kenya: {
+      title: "Kenya – Wildlife Safari",
+      category: "Luxury",
+      duration: "6 Days · 5 Nights",
+      price: "From ₹69,999 per person",
+      description: "Experience Kenya's incredible wildlife, open savannah landscapes and unforgettable safari scenery.",
+      places: ["Maasai Mara", "Lake Nakuru", "Nairobi"],
+      activities: ["Guided safari", "Wildlife viewing", "Nature photography"],
+      includes: ["Lodge accommodation", "Meals", "Safari experience", "Transfers"]
+      },
+  
+      finland: {
+      title: "Finland – Northern Nature",
+      category: "Luxury",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹79,999 per person",
+      description: "Enjoy Finland's peaceful forests, snowy landscapes and magical northern scenery.",
+      places: ["Rovaniemi", "Helsinki", "Levi"],
+      activities: ["Northern Lights experience", "Snow activities", "City sightseeing"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Guided activities", "Transfers"]
+      },
+  
+      poland: {
+      title: "Poland – European Budget Trip",
+      category: "Budget",
+      duration: "5 Days · 4 Nights",
+      price: "From ₹44,999 per person",
+      description: "Explore Poland's colourful historic towns, beautiful squares and fascinating European heritage.",
+      places: ["Krakow", "Warsaw", "Wroclaw"],
+      activities: ["Heritage walks", "City sightseeing", "Local market visits"],
+      includes: ["Hotel accommodation", "Daily breakfast", "City tours", "Transfers"]
+      },
+  
+      croatia: {
+      title: "Croatia – Adriatic Coast Escape",
+      category: "Beach",
+      duration: "6 Days · 5 Nights",
+      price: "From ₹74,999 per person",
+      description: "Discover Croatia's beautiful coastline, historic seaside towns and crystal-clear Adriatic waters.",
+      places: ["Dubrovnik", "Split", "Hvar Island"],
+      activities: ["Coastal sightseeing", "Boat trips", "Beach exploration"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Sightseeing", "Transfers"]
+      },
+  
+      peru: {
+      title: "Peru – Andes Adventure",
+      category: "Adventure",
+      duration: "6 Days · 5 Nights",
+      price: "From ₹84,999 per person",
+      description: "Explore Peru's ancient heritage, impressive mountain landscapes and the world-famous Machu Picchu.",
+      places: ["Machu Picchu", "Cusco", "Sacred Valley"],
+      activities: ["Heritage exploration", "Scenic trekking", "Local cultural experiences"],
+      includes: ["Hotel accommodation", "Daily breakfast", "Guided tours", "Transfers"]
+      }
+  
+      };
+      // Open package details popup
+      document.querySelectorAll(".view-package-btn").forEach(button => {
+      button.addEventListener("click", () => {
+      const packageName = button.dataset.package;
+      const details = packageDetails[packageName];
+  
+      if (!details) {
+      alert("Details for this package will be added soon!");
+      return;
+      }
+  
+      document.getElementById("modalPackageTitle").textContent = details.title;
+      document.getElementById("modalPackageTag").textContent = details.category;
+      document.getElementById("modalPackageDuration").textContent = details.duration;
+      document.getElementById("modalPackagePrice").textContent = details.price;
+      document.getElementById("modalPackageDescription").textContent = details.description;
+  
+      const card = button.closest(".packages-card");
+      const cardImage = card.querySelector("img");
+  
+      document.getElementById("modalPackageImage").src = cardImage.src;
+      document.getElementById("modalPackageImage").alt = details.title;
+  
+      function fillList(elementId, items) {
+      const list = document.getElementById(elementId);
+      list.innerHTML = "";
+  
+      items.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      list.appendChild(li);
+      });
+      }
+  
+      fillList("modalPackagePlaces", details.places);
+      fillList("modalPackageActivities", details.activities);
+      fillList("modalPackageIncludes", details.includes);
+  
+      packageModal.classList.add("show");
+      });
+      });
+  
+      // Close popup
+      closePackageModal.addEventListener("click", () => {
+      packageModal.classList.remove("show");
+      });
+  
+      // Close when clicking outside the popup
+      packageModal.addEventListener("click", event => {
+      if (event.target === packageModal) {
+      packageModal.classList.remove("show");
+      }
+      });
+  
+      // Close with Escape key
+      document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+      packageModal.classList.remove("show");
+      }
+      });
+  
+    </script>
+  </body>
+</html>
